@@ -4,6 +4,9 @@
  */
 package ui;
 
+import simlpyapply.AskForLogin;
+import simlpyapply.SignUp;
+
 /**
  *
  * @author mc
@@ -42,7 +45,7 @@ public class Login extends javax.swing.JFrame {
         setLocation(new java.awt.Point(210, 100));
         setResizable(false);
 
-        signInPanel.setBackground(new java.awt.Color(255, 51, 51));
+        signInPanel.setBackground(new java.awt.Color(153, 153, 153));
         signInPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 51, 51), new java.awt.Color(153, 153, 153)));
 
         userName.setBackground(new java.awt.Color(0, 0, 0));
@@ -144,7 +147,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(signInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SignupBtn))
-                .addContainerGap(165, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -159,7 +162,7 @@ public class Login extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
+                .addGap(46, 46, 46)
                 .addComponent(signInPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(58, Short.MAX_VALUE))
         );
