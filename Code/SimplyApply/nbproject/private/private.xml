@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/ui/MangeInstituteDashboard.java</file>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/ui/AdminDashboard.java</file>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/dal/DALManager.java</file>
+        </group>
     </open-files>
 </project-private>

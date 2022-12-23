@@ -124,7 +124,7 @@ public class AskForLogin extends javax.swing.JFrame {
     private void adminBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminBtnActionPerformed
    
         this.setVisible(false);
-        new AdminView().setVisible(true);
+        new AdminDashboard().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_adminBtnActionPerformed
 
