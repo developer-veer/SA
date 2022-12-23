@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package simlpyapply;
+package ui;
 
 /**
  *
@@ -124,7 +124,7 @@ public class AskForLogin extends javax.swing.JFrame {
     private void adminBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminBtnActionPerformed
    
         this.setVisible(false);
-        new AdminView().setVisible(true);
+        new AdminDashboard().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_adminBtnActionPerformed
 

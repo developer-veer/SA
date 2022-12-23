@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/RegistrationOfStudent.java</file>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/Login.java</file>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/AdminView.java</file>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/OwnerDashboard.java</file>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/HomeDashboard.java</file>
-            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/simlpyapply/AskForLogin.java</file>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/ui/MangeInstituteDashboard.java</file>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/ui/AdminDashboard.java</file>
+            <file>file:/D:/OOSE_SA/SA/Code/SimplyApply/src/dal/DALManager.java</file>
         </group>
     </open-files>
 </project-private>
