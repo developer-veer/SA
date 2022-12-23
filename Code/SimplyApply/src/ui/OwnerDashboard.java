@@ -4,6 +4,8 @@
  */
 package ui;
 
+import UI.admininterface.addinstitute;
+
 /**
  *
  * @author mc
@@ -60,23 +62,28 @@ public class OwnerDashboard extends javax.swing.JFrame {
 
         addInstiBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addInstiBtn.setText("Add Institue");
+        addInstiBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addInstiBtnActionPerformed(evt);
+            }
+        });
         jPanel2.add(addInstiBtn);
-        addInstiBtn.setBounds(0, 100, 130, 27);
+        addInstiBtn.setBounds(0, 100, 130, 26);
 
         ViewInstBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         ViewInstBtn.setText("View Institues");
         jPanel2.add(ViewInstBtn);
-        ViewInstBtn.setBounds(0, 160, 130, 27);
+        ViewInstBtn.setBounds(0, 160, 130, 26);
 
         AdrvtzBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         AdrvtzBtn.setText("Advertize");
         jPanel2.add(AdrvtzBtn);
-        AdrvtzBtn.setBounds(0, 220, 130, 27);
+        AdrvtzBtn.setBounds(0, 220, 130, 26);
 
         RmvBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         RmvBtn.setText("Remove ");
         jPanel2.add(RmvBtn);
-        RmvBtn.setBounds(0, 280, 130, 27);
+        RmvBtn.setBounds(0, 280, 130, 26);
 
         logOutBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         logOutBtn.setText("Logout");
@@ -86,7 +93,7 @@ public class OwnerDashboard extends javax.swing.JFrame {
             }
         });
         jPanel2.add(logOutBtn);
-        logOutBtn.setBounds(0, 340, 130, 27);
+        logOutBtn.setBounds(0, 340, 130, 26);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 130, 530);
@@ -116,6 +123,13 @@ public class OwnerDashboard extends javax.swing.JFrame {
         new HomeDashboard().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logOutBtnActionPerformed
+
+    private void addInstiBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addInstiBtnActionPerformed
+        this.setVisible(false);
+        new addinstitute().setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_addInstiBtnActionPerformed
 
     /**
      * @param args the command line arguments
