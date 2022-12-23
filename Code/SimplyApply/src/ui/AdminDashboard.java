@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package simlpyapply;
+package ui;
 
 /**
  *
  * @author mc
  */
-public class AdminView extends javax.swing.JFrame {
+public class AdminDashboard extends javax.swing.JFrame {
 
     /**
      * Creates new form AdminView
      */
-    public AdminView() {
+    public AdminDashboard() {
         initComponents();
     }
 
@@ -32,9 +32,12 @@ public class AdminView extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         logoffBtn = new javax.swing.JButton();
+        showPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administration");
         setMinimumSize(new java.awt.Dimension(750, 600));
+        setPreferredSize(new java.awt.Dimension(800, 500));
         setSize(new java.awt.Dimension(700, 500));
         getContentPane().setLayout(null);
 
@@ -43,23 +46,32 @@ public class AdminView extends javax.swing.JFrame {
         jLabel1.setText("                                                                Administartion");
         jLabel1.setOpaque(true);
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 770, 60);
+        jLabel1.setBounds(0, 0, 820, 60);
 
-        jPanel1.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Grey"));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setLayout(null);
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 153));
         jButton1.setText("Manage Owner");
         jPanel1.add(jButton1);
-        jButton1.setBounds(10, 10, 120, 30);
+        jButton1.setBounds(10, 50, 120, 30);
 
+        jButton2.setBackground(new java.awt.Color(0, 153, 153));
         jButton2.setText("Check Requests");
         jPanel1.add(jButton2);
-        jButton2.setBounds(10, 73, 120, 30);
+        jButton2.setBounds(10, 110, 120, 30);
 
+        jButton3.setBackground(new java.awt.Color(0, 153, 153));
         jButton3.setText("Manage Institue");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3);
-        jButton3.setBounds(10, 133, 120, 30);
+        jButton3.setBounds(10, 170, 120, 30);
 
+        logoffBtn.setBackground(new java.awt.Color(0, 153, 153));
         logoffBtn.setText("Logoff");
         logoffBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,10 +79,14 @@ public class AdminView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(logoffBtn);
-        logoffBtn.setBounds(10, 193, 120, 30);
+        logoffBtn.setBounds(10, 240, 120, 30);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 60, 140, 480);
+
+        showPanel.setBackground(new java.awt.Color(0, 153, 153));
+        getContentPane().add(showPanel);
+        showPanel.setBounds(140, 60, 680, 480);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -81,6 +97,12 @@ public class AdminView extends javax.swing.JFrame {
         new HomeDashboard().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logoffBtnActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -99,20 +121,21 @@ public class AdminView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdminView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdminView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdminView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdminView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminDashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdminView().setVisible(true);
+                new AdminDashboard().setVisible(true);
             }
         });
     }
@@ -124,5 +147,6 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton logoffBtn;
+    private javax.swing.JPanel showPanel;
     // End of variables declaration//GEN-END:variables
 }
