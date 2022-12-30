@@ -18,5 +18,9 @@ public class SAFactory {
     {
         return new RecordsModifier();
     }
+  
+   public static SAController getInstanceOfSMSController() {
+        return new SAController();
+    }
     
 }

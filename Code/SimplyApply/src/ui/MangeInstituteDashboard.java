@@ -4,17 +4,28 @@
  */
 package ui;
 
+import java.util.ArrayList;
+import model.SAController;
+import model.SAFactory;
+
 /**
  *
  * @author mc
  */
 public class MangeInstituteDashboard extends javax.swing.JFrame {
-
+   
+    AdminDashboard objMainUI;
+SAController objController;
     /**
      * Creates new form AdminView
      */
-    public MangeInstituteDashboard() {
+    public MangeInstituteDashboard(AdminDashboard aThis) {
+        
+        
         initComponents();
+        objMainUI = aThis;
+        objController = SAFactory.getInstanceOfSMSController();
+        loadData();
     }
 
     /**
@@ -122,6 +133,15 @@ public class MangeInstituteDashboard extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_logoffBtnActionPerformed
 
+           private void loadData() {
+               
+        String searchKeyword = searchEmployee.getText();
+        ArrayList<EmployeeDTO> empList = objController.viewEmployees(searchKeyword);
+        PopulateDataFromDatabase(empList);
+    }
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -155,9 +175,11 @@ public class MangeInstituteDashboard extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MangeInstituteDashboard().setVisible(true);
+               
             }
         });
+        
+      
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
