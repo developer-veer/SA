@@ -27,44 +27,144 @@ public class addinstitute extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        addistBtn = new javax.swing.JButton();
+        Heading = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        NameOfInstitute = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        OwnerName = new javax.swing.JTextField();
+        Address = new javax.swing.JTextField();
+        Email = new javax.swing.JTextField();
+        ContactNo = new javax.swing.JTextField();
+        InstituteType = new javax.swing.JComboBox<>();
+        submit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        addistBtn.setText("jButton1");
-        addistBtn.addActionListener(new java.awt.event.ActionListener() {
+        Heading.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        Heading.setText("Fill the form");
+
+        jLabel1.setText("Name Of Institute:");
+
+        NameOfInstitute.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addistBtnActionPerformed(evt);
+                NameOfInstituteActionPerformed(evt);
             }
         });
+
+        jLabel2.setText("Institute Type:");
+
+        jLabel4.setText("Owner Name:");
+
+        jLabel5.setText("Address:");
+
+        jLabel6.setText("Email:");
+
+        jLabel7.setText("Contact No:");
+
+        OwnerName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OwnerNameActionPerformed(evt);
+            }
+        });
+
+        Address.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddressActionPerformed(evt);
+            }
+        });
+
+        InstituteType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "School", "College", "University" }));
+
+        submit.setBackground(new java.awt.Color(153, 153, 255));
+        submit.setText("Submit");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(239, 239, 239)
-                .addComponent(addistBtn)
-                .addContainerGap(241, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(NameOfInstitute)
+                                    .addComponent(OwnerName)
+                                    .addComponent(Address)
+                                    .addComponent(Email)
+                                    .addComponent(ContactNo)
+                                    .addComponent(InstituteType, 0, 331, Short.MAX_VALUE)))
+                            .addComponent(Heading, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(223, 223, 223)
+                        .addComponent(submit)))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(addistBtn)
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addGap(17, 17, 17)
+                .addComponent(Heading, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(NameOfInstitute, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(InstituteType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(OwnerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8, 8, 8)
+                .addComponent(jLabel3)
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(Address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(ContactNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(submit)
+                .addGap(7, 7, 7))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addistBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addistBtnActionPerformed
-       
-        new next().setVisible(true);
-        this.setVisible(false);
-        this.dispose();
-        
-    }//GEN-LAST:event_addistBtnActionPerformed
+    private void NameOfInstituteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameOfInstituteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NameOfInstituteActionPerformed
+
+    private void OwnerNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OwnerNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OwnerNameActionPerformed
+
+    private void AddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AddressActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,6 +202,20 @@ public class addinstitute extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addistBtn;
+    private javax.swing.JTextField Address;
+    private javax.swing.JTextField ContactNo;
+    private javax.swing.JTextField Email;
+    private javax.swing.JLabel Heading;
+    private javax.swing.JComboBox<String> InstituteType;
+    private javax.swing.JTextField NameOfInstitute;
+    private javax.swing.JTextField OwnerName;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JButton submit;
     // End of variables declaration//GEN-END:variables
 }
