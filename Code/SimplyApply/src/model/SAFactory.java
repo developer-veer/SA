@@ -6,7 +6,9 @@ package model;
 
 import dal.DALManager;
 import dal.RecordMapper;
+import dal.Recordadder;
 import dal.RecordsModifier;
+import model.dto.Response;
 
 /**
  *
@@ -22,5 +24,21 @@ public class SAFactory {
    public static SAController getInstanceOfSMSController() {
         return new SAController();
     }
+
+    
+static Response getResponseInstance() {
+        return new Response();
+    }
+
+    static objDAL getInstanceOfDALManager() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+   
+
+    public static Recordadder getInstanceOfAdder() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
     
 }

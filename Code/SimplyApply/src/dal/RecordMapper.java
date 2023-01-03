@@ -22,11 +22,13 @@ public class RecordMapper {
             {
                 InstitueDTO objInstitute=new InstitueDTO();                
               
-                objInstitute.Id = rs.getString(1);
-                 objInstitute.Name = rs.getString(2);
+                objInstitute.Address = rs.getString(1);
+                 objInstitute.NameOfInstitute = rs.getString(2);
                   objInstitute.OwnerName = rs.getString(4);
-                  objInstitute.Type = rs.getString(3);
-                   objInstitute.RegKey = rs.getString(5);
+                  objInstitute.InstituteType = rs.getString(3);
+                   objInstitute.ContactNo = rs.getString(5);
+                   objInstitute.Email = rs.getString(6);
+                   
                 
                 emplist.add(objInstitute);
             }

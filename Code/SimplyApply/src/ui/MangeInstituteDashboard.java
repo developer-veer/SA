@@ -25,7 +25,7 @@ SAController objController;
         initComponents();
         objMainUI = aThis;
         objController = SAFactory.getInstanceOfSMSController();
-        loadData();
+        
     }
 
     /**
@@ -37,6 +37,8 @@ SAController objController;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Table = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         RemoveBtn = new javax.swing.JButton();
@@ -44,8 +46,30 @@ SAController objController;
         jButton3 = new javax.swing.JButton();
         logoffBtn = new javax.swing.JButton();
         showPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        Table = new javax.swing.JTable();
+
+        Table.setBackground(new java.awt.Color(0, 153, 153));
+        Table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "InstitueID", "InstitueName", "InstitueType", "OwnerName", "RegKey"
+            }
+        ));
+        Table.setGridColor(new java.awt.Color(0, 153, 153));
+        Table.setPreferredSize(new java.awt.Dimension(650, 120));
+        Table.setSelectionBackground(new java.awt.Color(0, 153, 153));
+        Table.setShowGrid(true);
+        jScrollPane1.setViewportView(Table);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Administration");
@@ -93,33 +117,6 @@ SAController objController;
         jPanel1.setBounds(0, 460, 810, 100);
 
         showPanel.setBackground(new java.awt.Color(0, 153, 153));
-
-        Table.setBackground(new java.awt.Color(0, 153, 153));
-        Table.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "InstitueID", "InstitueName", "InstitueType", "OwnerName", "RegKey"
-            }
-        ));
-        Table.setGridColor(new java.awt.Color(0, 153, 153));
-        Table.setPreferredSize(new java.awt.Dimension(650, 120));
-        Table.setSelectionBackground(new java.awt.Color(0, 153, 153));
-        Table.setShowGrid(true);
-        jScrollPane1.setViewportView(Table);
-
-        showPanel.add(jScrollPane1);
-
         getContentPane().add(showPanel);
         showPanel.setBounds(0, 60, 810, 400);
 
@@ -133,12 +130,7 @@ SAController objController;
         this.dispose();
     }//GEN-LAST:event_logoffBtnActionPerformed
 
-           private void loadData() {
-               
-        String searchKeyword = searchEmployee.getText();
-        ArrayList<EmployeeDTO> empList = objController.viewEmployees(searchKeyword);
-        PopulateDataFromDatabase(empList);
-    }
+    
     
     
     

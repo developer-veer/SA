@@ -5,17 +5,28 @@
  */
 package UI.admininterface;
 
+import model.SAController;
+import model.dto.InstitueDTO;
+import model.dto.Response;
+
 /**
  *
  * @author laiba
  */
 public class addinstitute extends javax.swing.JFrame {
 
-    /**
-     * Creates new form addinstitute
-     */
-    public addinstitute() {
+    InstituteUI institute;
+    SAController objController;
+    
+    
+    public addinstitute(InstituteUI aThis, SAController objController) {
         initComponents();
+        this.institute = aThis;
+        this.objController = oController;
+    }
+
+    public addinstitute() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -42,6 +53,8 @@ public class addinstitute extends javax.swing.JFrame {
         ContactNo = new javax.swing.JTextField();
         InstituteType = new javax.swing.JComboBox<>();
         submit = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,6 +95,15 @@ public class addinstitute extends javax.swing.JFrame {
 
         submit.setBackground(new java.awt.Color(153, 153, 255));
         submit.setText("Submit");
+        submit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("InstituteID");
+
+        jTextField1.setText("jTextField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,7 +122,8 @@ public class addinstitute extends javax.swing.JFrame {
                                     .addComponent(jLabel4)
                                     .addComponent(jLabel5)
                                     .addComponent(jLabel6)
-                                    .addComponent(jLabel7))
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8))
                                 .addGap(28, 28, 28)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(NameOfInstitute)
@@ -108,7 +131,8 @@ public class addinstitute extends javax.swing.JFrame {
                                     .addComponent(Address)
                                     .addComponent(Email)
                                     .addComponent(ContactNo)
-                                    .addComponent(InstituteType, 0, 331, Short.MAX_VALUE)))
+                                    .addComponent(InstituteType, 0, 331, Short.MAX_VALUE)
+                                    .addComponent(jTextField1)))
                             .addComponent(Heading, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(223, 223, 223)
@@ -142,12 +166,17 @@ public class addinstitute extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(ContactNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ContactNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
                 .addGap(18, 18, 18)
-                .addComponent(submit)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(12, 12, 12)
+                        .addComponent(submit))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(7, 7, 7))
         );
 
@@ -165,6 +194,19 @@ public class addinstitute extends javax.swing.JFrame {
     private void AddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AddressActionPerformed
+
+    private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
+        InstitueDTO ins = new InstitueDTO();
+        ins.Address = Address.getText();
+        ins.ContactNo = ContactNo.getText();
+        ins.Email = Email.getText();
+        ins.InstituteType = InstituteType.getSelectedItem().toString();
+        ins.NameOfInstitute = NameOfInstitute.getText();
+        ins.OwnerName = OwnerName.getText();
+        
+        Response objResponse = SAController.addInstituteins(ins);
+        CommonHandler.handleResponse(objResponse,jLabel5);
+    }//GEN-LAST:event_submitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,9 +237,11 @@ public class addinstitute extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
-                new addinstitute().setVisible(true);
+                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
             }
+           
         });
     }
 
@@ -216,6 +260,9 @@ public class addinstitute extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton submit;
     // End of variables declaration//GEN-END:variables
 }
+

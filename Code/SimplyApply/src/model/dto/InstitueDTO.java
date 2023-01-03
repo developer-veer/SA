@@ -10,10 +10,11 @@ package model.dto;
  */
 public class InstitueDTO {
     
-    public String Id ;
-    public String Name ;
-    public String Type ;
+    public String NameOfInstitute ;
     public String OwnerName ;
-    public  String    RegKey;
+    public String InstituteType ;
+    public String Address ;
+    public  String Email;
+    public String ContactNo;
     
 }

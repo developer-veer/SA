@@ -4,8 +4,6 @@
  */
 package ui;
 
-import simlpyapply.AskForLogin;
-import simlpyapply.SignUp;
 
 /**
  *
