@@ -31,15 +31,15 @@ public class HomeDashboard extends javax.swing.JFrame {
 
         buttonsPanel = new javax.swing.JPanel();
         label1 = new java.awt.Label();
-        jSeparator1 = new javax.swing.JSeparator();
         LoginBtn = new javax.swing.JButton();
         showIntrestBtn = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        showIntrestBtn1 = new javax.swing.JButton();
+        showIntrestBtn2 = new javax.swing.JButton();
         mainRectanglePanel = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        searchBtn = new javax.swing.JButton();
-        jSeparator2 = new javax.swing.JSeparator();
         showPanel = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        searchBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SimplyApply");
@@ -47,19 +47,15 @@ public class HomeDashboard extends javax.swing.JFrame {
         setLocation(new java.awt.Point(210, 100));
         setResizable(false);
 
-        buttonsPanel.setBackground(new java.awt.Color(51, 51, 51));
+        buttonsPanel.setBackground(new java.awt.Color(0, 153, 153));
 
-        label1.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
-        label1.setForeground(new java.awt.Color(0, 153, 0));
+        label1.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText(" SimplyApply");
-
-        jSeparator1.setBackground(new java.awt.Color(255, 102, 0));
-        jSeparator1.setForeground(new java.awt.Color(255, 102, 0));
-        jSeparator1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, javax.swing.UIManager.getDefaults().getColor("Actions.Yellow"), javax.swing.UIManager.getDefaults().getColor("Actions.Yellow"), javax.swing.UIManager.getDefaults().getColor("Actions.Yellow"), new java.awt.Color(255, 153, 0)));
 
         LoginBtn.setBackground(new java.awt.Color(0, 102, 102));
         LoginBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        LoginBtn.setForeground(new java.awt.Color(255, 204, 0));
+        LoginBtn.setForeground(new java.awt.Color(255, 255, 255));
         LoginBtn.setText("Login");
         LoginBtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         LoginBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -71,7 +67,7 @@ public class HomeDashboard extends javax.swing.JFrame {
 
         showIntrestBtn.setBackground(new java.awt.Color(0, 102, 102));
         showIntrestBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        showIntrestBtn.setForeground(new java.awt.Color(255, 204, 0));
+        showIntrestBtn.setForeground(new java.awt.Color(255, 255, 255));
         showIntrestBtn.setText("Show Interest");
         showIntrestBtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         showIntrestBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -83,101 +79,114 @@ public class HomeDashboard extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 204, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Help");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        showIntrestBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        showIntrestBtn1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        showIntrestBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        showIntrestBtn1.setText("Show Interest");
+        showIntrestBtn1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        showIntrestBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        showIntrestBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showIntrestBtn1ActionPerformed(evt);
+            }
+        });
+
+        showIntrestBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        showIntrestBtn2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        showIntrestBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        showIntrestBtn2.setText("Show Interest");
+        showIntrestBtn2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        showIntrestBtn2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        showIntrestBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showIntrestBtn2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout buttonsPanelLayout = new javax.swing.GroupLayout(buttonsPanel);
         buttonsPanel.setLayout(buttonsPanelLayout);
         buttonsPanelLayout.setHorizontalGroup(
             buttonsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonsPanelLayout.createSequentialGroup()
-                .addGroup(buttonsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(buttonsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, buttonsPanelLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jSeparator1))
-                        .addComponent(LoginBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(showIntrestBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(buttonsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(showIntrestBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(showIntrestBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(showIntrestBtn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LoginBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         buttonsPanelLayout.setVerticalGroup(
             buttonsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonsPanelLayout.createSequentialGroup()
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77)
+                .addGap(68, 68, 68)
                 .addComponent(showIntrestBtn)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
+                .addComponent(showIntrestBtn2)
+                .addGap(46, 46, 46)
+                .addComponent(showIntrestBtn1)
+                .addGap(47, 47, 47)
                 .addComponent(LoginBtn)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        mainRectanglePanel.setBackground(new java.awt.Color(255, 102, 0));
+        mainRectanglePanel.setBackground(new java.awt.Color(0, 153, 153));
+        mainRectanglePanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jTextField1.setBackground(new java.awt.Color(255, 102, 0));
-        jTextField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Search Institue", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.ABOVE_TOP, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        showPanel.setBackground(new java.awt.Color(0, 153, 153));
 
-        searchBtn.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField2.setText("Search here . . . . .");
+
+        searchBtn.setBackground(new java.awt.Color(0, 102, 102));
         searchBtn.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        searchBtn.setForeground(new java.awt.Color(204, 204, 0));
+        searchBtn.setForeground(new java.awt.Color(255, 255, 255));
         searchBtn.setText("Search");
         searchBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         searchBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
-
-        showPanel.setBackground(new java.awt.Color(0, 204, 204));
 
         javax.swing.GroupLayout showPanelLayout = new javax.swing.GroupLayout(showPanel);
         showPanel.setLayout(showPanelLayout);
         showPanelLayout.setHorizontalGroup(
             showPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(showPanelLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(150, Short.MAX_VALUE))
         );
         showPanelLayout.setVerticalGroup(
             showPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 418, Short.MAX_VALUE)
+            .addGroup(showPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(showPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout mainRectanglePanelLayout = new javax.swing.GroupLayout(mainRectanglePanel);
         mainRectanglePanel.setLayout(mainRectanglePanelLayout);
         mainRectanglePanelLayout.setHorizontalGroup(
             mainRectanglePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainRectanglePanelLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(mainRectanglePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainRectanglePanelLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(mainRectanglePanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 4, Short.MAX_VALUE)
-                        .addGap(214, 214, 214))))
-            .addComponent(showPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainRectanglePanelLayout.createSequentialGroup()
+                .addGap(0, 35, Short.MAX_VALUE)
+                .addComponent(showPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         mainRectanglePanelLayout.setVerticalGroup(
             mainRectanglePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainRectanglePanelLayout.createSequentialGroup()
-                .addGroup(mainRectanglePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainRectanglePanelLayout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(mainRectanglePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainRectanglePanelLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
-                .addComponent(showPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(58, Short.MAX_VALUE)
+                .addComponent(showPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(193, 193, 193))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -185,14 +194,15 @@ public class HomeDashboard extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(buttonsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(buttonsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mainRectanglePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(mainRectanglePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(buttonsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(mainRectanglePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(buttonsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -212,6 +222,14 @@ public class HomeDashboard extends javax.swing.JFrame {
        
         
     }//GEN-LAST:event_LoginBtnActionPerformed
+
+    private void showIntrestBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showIntrestBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_showIntrestBtn1ActionPerformed
+
+    private void showIntrestBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showIntrestBtn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_showIntrestBtn2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,13 +271,13 @@ public class HomeDashboard extends javax.swing.JFrame {
     private javax.swing.JButton LoginBtn;
     private javax.swing.JPanel buttonsPanel;
     private javax.swing.JButton jButton1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private java.awt.Label label1;
     private javax.swing.JPanel mainRectanglePanel;
     private javax.swing.JButton searchBtn;
     private javax.swing.JButton showIntrestBtn;
+    private javax.swing.JButton showIntrestBtn1;
+    private javax.swing.JButton showIntrestBtn2;
     public javax.swing.JPanel showPanel;
     // End of variables declaration//GEN-END:variables
 }
